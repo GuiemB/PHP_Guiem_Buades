@@ -1,3 +1,6 @@
+<htm>
+<body>
+
 <?php
 
 /*vector unidimensional with week days one weelday in each position
@@ -22,3 +25,5 @@ for ($a = 0; $a < count($dias);$a++)
  }
 
 ?>
+</body>
+</html
