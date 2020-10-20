@@ -15,14 +15,10 @@ $dies[]="Viernes";
 $dies[]="Sabado";
 $dies[]="Domingo";
 
-for ($i=0; $i<count($dies); $i++)
-{
-	echo "El contador esta en $i";
-	echo "\n";
-	echo "Hay " .count($dies). " elementos";
-	echo "\n";
-	echo "Accedemos al contenido del $dies[$i] \n";
-}
-
+for ($a = 0; $a < count($dias);$a++)
+ {
+	 echo $dias[$a];
+	 echo "<br>";
+ }
 
 ?>
