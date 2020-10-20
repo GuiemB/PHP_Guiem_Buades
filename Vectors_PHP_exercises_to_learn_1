@@ -1,0 +1,28 @@
+<?php
+
+/*vector unidimensional with week days one weelday in each position
+
+values	    Monday Tuesday wednesday Thursday friday saturday sunday
+position	0		1		2		 3		  4		 5		  6
+
+program the PHP coda to show in the screen the vector content: one weekday in each line use control structures while, for...*/
+
+$dies[]="Lunes";
+$dies[]="Martes";
+$dies[]="Miercoles";
+$dies[]="Jueves";
+$dies[]="Viernes";
+$dies[]="Sabado";
+$dies[]="Domingo";
+
+for ($i=0; $i<count($dies); $i++)
+{
+	echo "El contador esta en $i";
+	echo "\n";
+	echo "Hay " .count($dies). " elementos";
+	echo "\n";
+	echo "Accedemos al contenido del $dies[$i] \n";
+}
+
+
+?>
