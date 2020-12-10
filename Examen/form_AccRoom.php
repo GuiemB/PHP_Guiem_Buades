@@ -111,8 +111,6 @@ if ($_GET){
         //Mostrar el missatge amb el preu total
         echo 'El preu es ';
         echo $finalPrice;
-        echo $partialPrice;
-        echo $partialPrice2;
     }
   ?>
 </body>
