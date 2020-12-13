@@ -1,9 +1,10 @@
 <?php
+//viusi corrections - see comments below amd rubric in moodle
 //Variables definition
 $name=$capitalisedName=$price=$discount=$discountQuantity=$finalPrice=$replacedMessage=null;
 
 //Reference to php file where the functions are
-'form_product_validation.php';
+'form_product_validation.php'; //visusi corrections - falta isntrucció include
 
 
 
@@ -17,17 +18,17 @@ if ($_POST){
   //price value
   $price=$_POST['price'];
   //selected discount
-  foreach ($_POST['discounts'] as $option)
+  foreach ($_POST['discounts'] as $option)//visusi corrections - Be attentive to solution in class
     $option = discountCalculation($discount,$price);
 
   //discountQuantity
   //if $discount and $price have been initialised and are not null
-  if(($discount)($price)){
+  if(($discount)($price)){//visusi corrections - Be attentive to solution in class
     $finalPrice = discountCalculation($discount,$price);
   }
   //message replacement
   //if $finalPrice is false using !
-  if($finalPrice !==0)
+  if($finalPrice !==0)//visusi corrections - Be attentive to solution in class
     $replacedMessage="Discount cannot be greater than price";
   else
     $replacedMessage=messageReplacement($capitalisedName,$finalPrice);
@@ -68,7 +69,7 @@ if ($_POST){
     <?php
     //if $finalPrice or $replacedMessage have been initialised and aren't null value
 
-    if (isset($finalPrice)){
+    if (isset($finalPrice)){//visusi corrections - Be attentive to solution in class
         echo "<p><b>Form output</b></p>";
         echo $finalPrice; //show message to the user
     }
