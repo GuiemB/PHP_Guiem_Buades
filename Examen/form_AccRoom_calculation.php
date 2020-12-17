@@ -18,7 +18,7 @@ function typePriceCalculation($type){
 //si es mixed el preu es 5
 //en cas contrari el preu es 0
 //emprar la funcio strcmp vista als exercicis de classe
-function genderPriceCalculation($gender){
+function genderPriceCalculation($gender){	 //visusi corrections - Be attentive to solution in class
   if (strcmp($gender, 'female') ==0)
     return 10;
     elseif (strcmp($gender, 'male') ==0)

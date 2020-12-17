@@ -1,4 +1,5 @@
 <?php
+//viusi corrections - see comments below amd rubric in moodle
 //Definició de variable i assignació de valor null
 $finalPrice=$partialPrice2=$partialPrice=$viewsPrice=$genderPrice=$typePrice=$foodServices=$views=$gender=$type=null;
 
@@ -48,15 +49,15 @@ if ($_GET){
   //si els preus del tipus i el genere de l'habitacio son major de 0
   //sumar-los i assignar el resultat a la variable $partialPrice
   if(($typePrice > 0)&&($genderPrice > 0))
-    $partialPrice=($typePrice+$genderPrice);
+    $partialPrice=($typePrice+$genderPrice); //visusi corrections - falta else
   //sino asignar valor 0 a $partialPrice
 
 
   //si els preus de les vistes i els serveis de restauracio diferent de 0
   //sumar-los i assignar el resultat a la variable $partialPrice2
-  if(($viewsPrice > 0)&&($foodServicesPrice!== 0))
+  if(($viewsPrice > 0)&&($foodServicesPrice!== 0))//visusi corrections - condició ha de ser != per als 2 
     $partialPrice2=($viewsPrice+$foodServicesPrice);
-  //sino asignar valor 0 a $partialPrice2
+  //sino asignar valor 0 a $partialPrice2 //visusi corrections - falta else
 
 
   //calcul del preu final
